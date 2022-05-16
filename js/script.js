@@ -25,13 +25,13 @@
   var remainder = 0
   var currentAnswer = 0
 
-  while (currentAnswer > 0 ) {
+  while (currentAnswer > -1 ) {
     currentAnswer = integer1 - integer2
     answer++
   } 
    while (currentAnswer < 0 ) {
     currentAnswer++
-    remainder = remainder + currentAnswer
+    remainder++
   }
 
   document.getElementById("output").innerHTML = "Your answer is: " + answer + "The remainder is " + remainder
