@@ -26,7 +26,7 @@
   var remainder = 0
 
 
-  while (currentAnswer > 0 ) {
+  while (currentAnswer >= 0 ) {
     currentAnswer = currentAnswer - integer2
     if (currentAnswer > 0) {
       answer++
