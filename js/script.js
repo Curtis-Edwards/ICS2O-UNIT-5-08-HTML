@@ -25,16 +25,30 @@
   var answer = 0 
   var remainder = 0
 
-
-  while (currentAnswer > 0 ) {
-    currentAnswer = currentAnswer - integer2
-    if (currentAnswer > 0) {
-      answer++
+  if ((integer1 > 0 && integer2 > 0) || (integer1 < 0 && integer2 < 0)) {
+    while (Math.abs(currentAnswer) > 0 ) {
+      currentAnswer = Math.abs(currentAnswer) - Math.abs(integer2)
+      if (currentAnswer > 0) {
+        answer++
+      }
+    } 
+     while (Math.abs(currentAnswer) < 0 ) {
+      currentAnswer++
+      remainder++
     }
-  } 
-   while (currentAnswer < 0 ) {
-    currentAnswer++
-    remainder++
-  }
+  document.getElementById("output").innerHTML = " The answer is: " + answer + " The remainder is: " + remainder    
+ }
+  if ((integer1 > 0 && integer2 < 0) || (integer1 > 0 && integer2 < 0)) {
+    while (Math.abs(currentAnswer) > 0 ) {
+      currentAnswer = Math.abs(currentAnswer) - Math.abs(integer2)
+      if (currentAnswer > 0) {
+        answer++
+      }
+    } 
+     while (currentAnswer < 0 ) {
+      currentAnswer++
+      remainder++
+    }
+ }
   document.getElementById("output").innerHTML = " The answer is: " + answer + " The remainder is: " + remainder
 }
