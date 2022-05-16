@@ -23,9 +23,9 @@
   var integer2 = parseInt(document.getElementById('integer2').value)
   var answer = 0 
   var remainder = 0
-  var currentAnswer = 0
+  var currentAnswer = 1
 
-  while (currentAnswer > -1 ) {
+  while (currentAnswer > 0 ) {
     currentAnswer = integer1 - integer2
     answer++
   } 
@@ -34,7 +34,7 @@
     remainder++
   }
 
-  document.getElementById("output").innerHTML = "Your answer is: " + answer + "The remainder is " + remainder
+  document.getElementById("output").innerHTML = "Your answer is: " +(answer + "The remainder is " + remainder
 }
 
 
