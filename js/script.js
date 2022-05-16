@@ -23,10 +23,16 @@
   var integer2 = parseInt(document.getElementById('integer2').value)
   var answer = 0 
   var remainder = 0
+  var currentAnswer = 0
 
-  if (integer1 > 0 && integer2 > 0) {
-
-  } else if () {}
+  while (currentAnswer > 0 ) {
+    currentAnswer = integer1 - integer2
+    answer++
+  } 
+   while (currentAnswer < 0 ) {
+    currentAnswer++
+    remainder = remainder + currentAnswer
+  }
 
   document.getElementById("output").innerHTML = "Your answer is: " + answer + "The remainder is " + remainder
 }
