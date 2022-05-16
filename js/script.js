@@ -21,12 +21,13 @@
 
   var integer1 = parseInt(document.getElementById('integer1').value)
   var integer2 = parseInt(document.getElementById('integer2').value)
+  var currentAnswer = parseInt(document.getElementById('integer1').value)
   var answer = 0 
   var remainder = 0
-  var currentAnswer = 1
+
 
   while (currentAnswer > 0 ) {
-    currentAnswer = integer1 - integer2
+    currentAnswer = currentAnswer - integer2
     answer++
   } 
    while (currentAnswer < 0 ) {
