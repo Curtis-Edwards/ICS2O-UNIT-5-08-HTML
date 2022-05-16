@@ -27,12 +27,14 @@
 
 
   while (currentAnswer > 0 ) {
-    answer++
     currentAnswer = currentAnswer - integer2
+    if (currentAnswer > 0) {
+      answer++
+    }
   } 
    while (currentAnswer < 0 ) {
     currentAnswer++
     remainder++
   }
-  document.getElementById("output").innerHTML = " The answer is: " + answer + "The remainder is: " + remainder
+  document.getElementById("output").innerHTML = " The answer is: " + answer + " The remainder is: " + remainder
 }
