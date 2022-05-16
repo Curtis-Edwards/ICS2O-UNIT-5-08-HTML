@@ -33,5 +33,5 @@
     currentAnswer++
     remainder++
   }
-  document.getElementById("output").innerHTML = "Your answer is: " +answer + "The remainder is " + remainder
+  document.getElementById("output").innerHTML = "Your answer is: " + answer + "The remainder is " + remainder
 }
